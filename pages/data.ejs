@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+
+        <% dataArr.forEach(function(el, index) { %>
+            <tr>
+                <td>
+                    <%= el.map(e=> e.name) %>
+                </td>
+                <td>
+                    <%= el.map(e=> e.username)%>
+                </td>
+                <td>
+                    <%= el.map(e=> e.email) %>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+
+    </table>
+
+
+
+</body>
+
+</html>
